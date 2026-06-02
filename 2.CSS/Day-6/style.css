@@ -1,0 +1,86 @@
+/* various types of selector */
+
+/*Universal Selector */
+*{
+    background-color: rgb(248, 239, 223);
+    text-align: justify;
+}
+
+/* Element Selector */
+h1{
+    color: #B92B27; 
+    font-family: helvetica; 
+}
+p{
+    color: lightcoral;
+}
+
+/* ID Selector */ 
+#login, #signup{
+    color: rgba(138, 0, 129, 0.612); 
+    background-color:  rgb(226, 175, 72); 
+}
+
+/* Class Selector */ 
+.a{
+    color: rgb(30, 10, 142); 
+    background-color: rgb(13, 245, 48); 
+}
+.b{
+    color: rgb(238, 246, 7); 
+    background-color: rgb(157, 19, 139);
+}
+
+/* Descendant selector*/  
+div h3{ 
+    color: red; 
+}
+P a{
+    background-color: rgb(232, 253, 6); 
+}
+
+/* Adjacent Sibling Selector*/ 
+p+h3{
+    color: #B92B27; 
+    text-decoration: underline; 
+    text-decoration-color: rgb(9, 190, 9);
+}
+
+/* child Selector */ 
+nav a{ 
+    color: rgb(43, 134, 226);
+}
+nav li{
+    color: red;
+}
+
+/* Attribute Selector*/ 
+input[type] { 
+    color: #db231c;
+    background-color: rgb(87, 230, 59);
+}
+
+/* Pseudo Class */
+div p:hover {
+    color: green; 
+} 
+button:hover{
+    color: white; 
+    background-color: black;
+} 
+button:active{
+    color: white; 
+    background-color: rgb(43, 5, 235);
+} 
+h3:hover{
+    text-decoration: overline;
+    text-decoration-color: rgb(9, 190, 9);
+}
+p:hover{
+    color: darkred;
+}
+
+/* Pseudo Element */
+h1::first-letter {
+    color: black;
+}

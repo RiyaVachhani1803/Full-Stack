@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset= "UTF-8"> 
+    <meta name="viewport" content="widthadevice-width, initial-scale-1.0"> 
+    <title>Day 4 </title> 
+<head> 
+<body> 
+    <h1>Formation of Tables</h1> 
+    <table border="black"> 
+        <caption><b><h2><u>Time Table</u></h2></b></caption> 
+        <!--Table header-->
+            <thead> 
+                <tr> 
+                    <th rowspan="3">DAY</th> 
+                    <th colspan="3">SEMINAR</th>
+                </tr>  
+                <tr>
+                     <th colspan="2">SCHEDULE</th>
+                     <th rowspan="2">TOPIC</th> 
+                </tr>
+                <tr>
+                     <th>BEGIN</th>
+                     <th>END</th> 
+                </tr>
+            </thead> 
+            <!--Table Body-->
+            <tbody> 
+                <tr>
+                     <td rowspan= "2">Monday</td> 
+                     <td rowspan="2">8.00 A.M.</td>
+                     <td rowspan="2">5.00 P.M.</td> 
+                     <td>Introduction to HTML</td>
+                </tr> 
+                <tr> 
+                    <td>HTML(Level-1)</td>
+                </tr>
+                <tr> 
+                    <td rowspan="3">Tuesday</td>
+                    <td>8.00 A.M.</td> 
+                    <td>11.00 A.M.</td> 
+                    <td>HTML(Level-2)</td>
+                </tr> 
+                <tr> 
+                    <td>11.00 A.M.</td>
+                    <td>2.00 P.M.</td> 
+                    <td rowspan="2">HTML(Level-3)</td> 
+                </tr> 
+                <tr> 
+                    <td>2.00 P.M.</td> 
+                    <td>5.00 P.M.</td> 
+                </tr> 
+                <tr> 
+                    <td>Wednesday</td> 
+                    <td>8.00 A.M.</td> 
+                    <td>11.00 A.M.</td> 
+                    <td>Introduction to CSS</td> 
+                </tr>
+
+            </tbody> 
+    </table>
+
+    <h1>Registration Form</h1>
+        
+    <form action="/action">
+        <div> 
+            <br><label for="Name"><b>Enter The Name :</b></label> 
+            <input type="text" placeholder="First Name" name="Fname"/> 
+            <input type="text" placeholder= "Middle Name" name="Mname"/>
+            <input type="text" placeholder="Last Name" name="Lname"/>
+        </div>
+
+        <div> 
+            <br><label for="Gender"><b>Enter The Gender :</b></label> 
+                <select name="gender" id="gender">
+                    <option value="M">Male</option> 
+                    <option value= "F">Female</option> 
+                    <option value="0">Other</option> 
+                </select>
+        </div>
+
+        <div> 
+            <br><label for="Age"><b>Enter The Age:</b></label> 
+                <input type= "Number"> 
+        </div>
+
+        <div> 
+            <br><label for="Number"><b>Enter Your Contact Number :</b></label> 
+                <input type= "number">
+        </div>
+
+        <div> 
+            <br><label for="DOB"><b>Enter The DOB :</b></label> 
+                <input type="date">
+        </div>
+
+        <div> 
+            <br><label for="Email"><b>Enter Your Email-Address :</b></label> 
+                <input type="email">
+        </div>
+
+        <div> 
+            <br><b>Choose Your Department :</b> 
+            <select name="Department" id="Department"> 
+                <option>Select Your option</option> 
+                <option value="Computer Engineering">CP</option> 
+                <option value="Information Technology">IT</option> 
+                <option value="Artificial intelligence and data science">AI&DS</option> 
+                <option value="Computer Science and Design">CSD</option> 
+            </select>
+        </div>
+
+        <div>
+             <br>Do you agree to all terms and conditions? 
+             <input type="checkbox" id="terms_agree" name="terms_agree">
+             <label for="terms_agree">Yes, I agree</label> 
+        </div>
+
+        <br><button>Submit</button>
+
+    </form>
+
+</body> 
+</html>
